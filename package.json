@@ -5,13 +5,20 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "heroku": "git add -A && git commit -m \"Update\" && git push heroku master && heroku logs --tail --dyno=web",
+    "start": "nodemon -L server.js"
   },
   "dependencies": {
     "axios": "^0.19.2",
+    "connect-history-api-fallback": "^1.6.0",
     "core-js": "^3.6.5",
+    "express": "^4.17.1",
+    "force-ssl-heroku": "^1.0.2",
+    "path": "^0.12.7",
     "pug": "^3.0.0",
     "pug-plain-loader": "^1.0.0",
+    "serve-static": "^1.14.1",
     "vue": "^2.6.11",
     "vue-router": "^3.3.4"
   },

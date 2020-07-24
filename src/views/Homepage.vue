@@ -194,6 +194,7 @@ export default {
    }
   .navs {
     display: flex;
+    margin-bottom: 1rem;
   }
   .navs .nav {
     color: rgba(0, 0, 0, 0.8);
@@ -210,6 +211,9 @@ export default {
   }
   .navs .nav.next {
     margin-left: auto;
+  }
+  .navs .nav.prev {
+    margin-right: 1rem
   }
   .hours {
     margin-top: .5rem;
